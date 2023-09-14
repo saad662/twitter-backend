@@ -5,7 +5,7 @@ const EMAIL_TOKEN__EXPIRATION_MINUTES = 10;
 const router = Router();
 const prisma = new PrismaClient();
 
-// Generate random 8 digit number as the email token
+// Generate a random 8 digit number as the email token
 function generateEmailToken(): string {
     return Math.floor(10000000 + Math.random() * 90000000).toString();
 }
