@@ -52,7 +52,7 @@ router.post('/login', async (req, res) => {
 
         res.sendStatus(200);
     } catch (e) {
-        res.status(400).json({ error: "Could not start the authentication process" });
+        res.status(400).json({ error: "Could not start the authentication process or same token generated" });
     }
 
 });
