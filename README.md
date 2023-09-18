@@ -1,10 +1,6 @@
 ﻿<!DOCTYPE html>
 <html>
 
-<head>
-    <title>Twitter Backend</title>
-</head>
-
 <body>
     <h1>Twitter Backend</h1>
     <img src="https://github.com/saad662/twitter-backend/blob/main/twitter-logo.png" alt="Twitter Backend Logo">
