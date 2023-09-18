@@ -1,5 +1,6 @@
 const sgMail = require('@sendgrid/mail')
-sgMail.setApiKey('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')
+sgMail.setApiKey('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')   
+// sendgrid deleted the API Key generate again
 
 export async function sendEmailToken(email: string, token: string) {
     const msg = {
