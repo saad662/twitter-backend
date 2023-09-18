@@ -3,7 +3,7 @@
 
 <body>
     <h1>Twitter Backend</h1>
-    <img src="https://github.com/saad662/twitter-backend/blob/main/twitter-logo.png" alt="Twitter Backend Logo">
+    <img src="https://github.com/saad662/twitter-backend/blob/main/twitter.png" alt="Twitter Backend Logo">
     <h2> Overview</h2>
     <p>Welcome to the Twitter Backend project! This Node.js application aims to resemble the backend functionality of the popular social media platform Twitter. It provides essential features for users, tweets, and authentication.</p><h2>Table of Contents</h2>
     <ol>
