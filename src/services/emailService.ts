@@ -1,5 +1,5 @@
 const sgMail = require('@sendgrid/mail')
-sgMail.setApiKey('SG.WjNHjpKqRAmTK69QQFQPHA.aocIfPYofiHBMnBPx')
+sgMail.setApiKey('SG.WjNHjpKqRAmTK69QQFQPHA.aocIfP')
 // Key cannot be uploaded publicaly generate new from sendGrid
 
 export async function sendEmailToken(email: string, token: string) {
