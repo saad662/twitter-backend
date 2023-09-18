@@ -6,20 +6,25 @@ const prisma = new PrismaClient();
 
 //Create Tweet
 router.post('/', async (req, res) => {
-    const { content, image, userId } = req.body;
+    const { content, image } = req.body;
+    // @ts-ignore
+    const user = req.user;
+  
     try {
-        const result = await prisma.tweet.create({
-            data: {
-                content,
-                image,
-                userId
-            },
-        });
-        res.json(result);
+      const result = await prisma.tweet.create({
+        data: {
+          content,
+          image,
+          userId: user.id,
+        },
+        include: { user: true },
+      });
+  
+      res.json(result);
     } catch (e) {
-        res.status(400).json({ error: 'An unexpected error occurred.' });
+      res.status(400).json({ error: 'Username and email should be unique' });
     }
-});
+  });
 
 
 //list Tweet
@@ -51,8 +56,6 @@ router.get('/:id', async (req, res) => {
     }
     res.json(tweet);
 });
-
-
 
 //update one Tweet
 router.put('/:id', async (req, res) => {
